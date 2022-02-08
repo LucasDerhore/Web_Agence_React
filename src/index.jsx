@@ -6,6 +6,17 @@ import About from "./pages/About";
 import Works from "./pages/Works";
 import Navbar from "./components/Navbar";
 import "./index.css";
+import { createContext } from "react";
+
+const themes = {
+  dark: "",
+  light: "white-content",
+};
+
+const ThemeContexte = createContext({
+  theme: themes.dark,
+  changeTheme: () => {},
+});
 
 const App = () => {
   return (
