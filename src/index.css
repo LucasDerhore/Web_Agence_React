@@ -36,7 +36,7 @@ nav > a {
 .card-content {
   padding: 15px;
   margin-left: 15px;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 h1 {
@@ -59,4 +59,23 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-size: 20px;
+}
+
+.works-list {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.works-list > a {
+  font-size: 40px;
+  padding: 15px;
+  text-decoration: none;
+  outline: none;
+  color: crimson;
+}
+
+.study-case {
+  margin-top: 100px;
+  margin-left: 45px;
+  font-size: 28px;
 }

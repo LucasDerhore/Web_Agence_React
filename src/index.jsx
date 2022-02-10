@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import "./index.css";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "themes.js";
+import StudyCase from "./components/StudyCase";
 
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/works" element={<Works />}></Route>
+            <Route path="/works/:clientname" element={<StudyCase />} />
           </Routes>
           <button onClick={() => themeToggler()}>Change Theme</button>
         </BrowserRouter>
